@@ -1,0 +1,718 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(45deg, #251351 0%, #040926 100%);
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.App {
+  width: 98em;
+  height: 52em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.App::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 19, 81, 0)), to(#040926));
+  background: linear-gradient(to bottom, rgba(37, 19, 81, 0) 0%, #040926 100%);
+  pointer-events: none;
+}
+
+.Header {
+  background: rgba(0, 0, 0, 0.45);
+  height: 80px;
+  min-height: 80px;
+}
+
+.Search {
+  padding: 24px;
+}
+
+.Search .SearchField {
+  padding: 10px;
+  border: 0;
+  border-radius: 1px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  outline: none;
+  font-weight: 300;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  -webkit-transition: border 0.125s ease;
+  transition: border 0.125s ease;
+}
+
+.Search .SearchField:focus {
+  border-bottom: 1px solid white;
+}
+
+.Results {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  height: calc(100% - 60px);
+  overflow: scroll;
+  padding: 0px;
+}
+
+.Result {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  width: 21%;
+  box-sizing: border-box;
+  max-height: 999px;
+}
+
+.Result:nth-child(1) .Icon {
+  -webkit-animation-delay: 0.25s;
+}
+
+.Result:nth-child(2) .Icon {
+  -webkit-animation-delay: 0.5s;
+}
+
+.Result:nth-child(3) .Icon {
+  -webkit-animation-delay: 0.75s;
+}
+
+.Result:nth-child(4) .Icon {
+  -webkit-animation-delay: 1s;
+}
+
+.Result:nth-child(5) .Icon {
+  -webkit-animation-delay: 1.25s;
+}
+
+.Result:nth-child(6) .Icon {
+  -webkit-animation-delay: 1.5s;
+}
+
+.Result:nth-child(7) .Icon {
+  -webkit-animation-delay: 1.75s;
+}
+
+.Result:nth-child(8) .Icon {
+  -webkit-animation-delay: 2s;
+}
+
+.Result:nth-child(9) .Icon {
+  -webkit-animation-delay: 2.25s;
+}
+
+.Result:nth-child(10) .Icon {
+  -webkit-animation-delay: 2.5s;
+}
+
+.Result:nth-child(11) .Icon {
+  -webkit-animation-delay: 2.75s;
+}
+
+.Result:nth-child(12) .Icon {
+  -webkit-animation-delay: 3s;
+}
+
+.Result:nth-child(13) .Icon {
+  -webkit-animation-delay: 3.25s;
+}
+
+.Result:nth-child(14) .Icon {
+  -webkit-animation-delay: 3.5s;
+}
+
+.Result:nth-child(15) .Icon {
+  -webkit-animation-delay: 3.75s;
+}
+
+.Result:nth-child(16) .Icon {
+  -webkit-animation-delay: 4s;
+}
+
+.Result:nth-child(17) .Icon {
+  -webkit-animation-delay: 4.25s;
+}
+
+.Result:nth-child(18) .Icon {
+  -webkit-animation-delay: 4.5s;
+}
+
+.Result:nth-child(19) .Icon {
+  -webkit-animation-delay: 4.75s;
+}
+
+.Result:nth-child(20) .Icon {
+  -webkit-animation-delay: 5s;
+}
+
+.Result:nth-child(21) .Icon {
+  -webkit-animation-delay: 5.25s;
+}
+
+.Result:nth-child(22) .Icon {
+  -webkit-animation-delay: 5.5s;
+}
+
+.Result:nth-child(23) .Icon {
+  -webkit-animation-delay: 5.75s;
+}
+
+.Result:nth-child(24) .Icon {
+  -webkit-animation-delay: 6s;
+}
+
+.Result:nth-child(25) .Icon {
+  -webkit-animation-delay: 6.25s;
+}
+
+.Result:nth-child(26) .Icon {
+  -webkit-animation-delay: 6.5s;
+}
+
+.Result:nth-child(27) .Icon {
+  -webkit-animation-delay: 6.75s;
+}
+
+.Result:nth-child(28) .Icon {
+  -webkit-animation-delay: 7s;
+}
+
+.Result:nth-child(29) .Icon {
+  -webkit-animation-delay: 7.25s;
+}
+
+.Result:nth-child(30) .Icon {
+  -webkit-animation-delay: 7.5s;
+}
+
+.Result:nth-child(31) .Icon {
+  -webkit-animation-delay: 7.75s;
+}
+
+.Result:nth-child(32) .Icon {
+  -webkit-animation-delay: 8s;
+}
+
+.Result:nth-child(33) .Icon {
+  -webkit-animation-delay: 8.25s;
+}
+
+.Result:nth-child(34) .Icon {
+  -webkit-animation-delay: 8.5s;
+}
+
+.Result:nth-child(35) .Icon {
+  -webkit-animation-delay: 8.75s;
+}
+
+.Result:nth-child(36) .Icon {
+  -webkit-animation-delay: 9s;
+}
+
+.Result:nth-child(37) .Icon {
+  -webkit-animation-delay: 9.25s;
+}
+
+.Result:nth-child(38) .Icon {
+  -webkit-animation-delay: 9.5s;
+}
+
+.Result:nth-child(39) .Icon {
+  -webkit-animation-delay: 9.75s;
+}
+
+.Result:nth-child(40) .Icon {
+  -webkit-animation-delay: 10s;
+}
+
+.Result:nth-child(41) .Icon {
+  -webkit-animation-delay: 10.25s;
+}
+
+.Result:nth-child(42) .Icon {
+  -webkit-animation-delay: 10.5s;
+}
+
+.Result:nth-child(43) .Icon {
+  -webkit-animation-delay: 10.75s;
+}
+
+.Result:nth-child(44) .Icon {
+  -webkit-animation-delay: 11s;
+}
+
+.Result:nth-child(45) .Icon {
+  -webkit-animation-delay: 11.25s;
+}
+
+.Result:nth-child(46) .Icon {
+  -webkit-animation-delay: 11.5s;
+}
+
+.Result:nth-child(47) .Icon {
+  -webkit-animation-delay: 11.75s;
+}
+
+.Result:nth-child(48) .Icon {
+  -webkit-animation-delay: 12s;
+}
+
+.Result:nth-child(49) .Icon {
+  -webkit-animation-delay: 12.25s;
+}
+
+.Result:nth-child(50) .Icon {
+  -webkit-animation-delay: 12.5s;
+}
+
+.Result:nth-child(51) .Icon {
+  -webkit-animation-delay: 12.75s;
+}
+
+.Result:nth-child(52) .Icon {
+  -webkit-animation-delay: 13s;
+}
+
+.Result:nth-child(53) .Icon {
+  -webkit-animation-delay: 13.25s;
+}
+
+.Result:nth-child(54) .Icon {
+  -webkit-animation-delay: 13.5s;
+}
+
+.Result:nth-child(55) .Icon {
+  -webkit-animation-delay: 13.75s;
+}
+
+.Result:nth-child(56) .Icon {
+  -webkit-animation-delay: 14s;
+}
+
+.Result:nth-child(57) .Icon {
+  -webkit-animation-delay: 14.25s;
+}
+
+.Result:nth-child(58) .Icon {
+  -webkit-animation-delay: 14.5s;
+}
+
+.Result:nth-child(59) .Icon {
+  -webkit-animation-delay: 14.75s;
+}
+
+.Result:nth-child(60) .Icon {
+  -webkit-animation-delay: 15s;
+}
+
+.Result:nth-child(61) .Icon {
+  -webkit-animation-delay: 15.25s;
+}
+
+.Result:nth-child(62) .Icon {
+  -webkit-animation-delay: 15.5s;
+}
+
+.Result:nth-child(63) .Icon {
+  -webkit-animation-delay: 15.75s;
+}
+
+.Result:nth-child(64) .Icon {
+  -webkit-animation-delay: 16s;
+}
+
+.Result:nth-child(65) .Icon {
+  -webkit-animation-delay: 16.25s;
+}
+
+.Result:nth-child(66) .Icon {
+  -webkit-animation-delay: 16.5s;
+}
+
+.Result:nth-child(67) .Icon {
+  -webkit-animation-delay: 16.75s;
+}
+
+.Result:nth-child(68) .Icon {
+  -webkit-animation-delay: 17s;
+}
+
+.Result:nth-child(69) .Icon {
+  -webkit-animation-delay: 17.25s;
+}
+
+.Result:nth-child(70) .Icon {
+  -webkit-animation-delay: 17.5s;
+}
+
+.Result:nth-child(71) .Icon {
+  -webkit-animation-delay: 17.75s;
+}
+
+.Result:nth-child(72) .Icon {
+  -webkit-animation-delay: 18s;
+}
+
+.Result:nth-child(73) .Icon {
+  -webkit-animation-delay: 18.25s;
+}
+
+.Result:nth-child(74) .Icon {
+  -webkit-animation-delay: 18.5s;
+}
+
+.Result:nth-child(75) .Icon {
+  -webkit-animation-delay: 18.75s;
+}
+
+.Result:nth-child(76) .Icon {
+  -webkit-animation-delay: 19s;
+}
+
+.Result:nth-child(77) .Icon {
+  -webkit-animation-delay: 19.25s;
+}
+
+.Result:nth-child(78) .Icon {
+  -webkit-animation-delay: 19.5s;
+}
+
+.Result:nth-child(79) .Icon {
+  -webkit-animation-delay: 19.75s;
+}
+
+.Result:nth-child(80) .Icon {
+  -webkit-animation-delay: 20s;
+}
+
+.Result:nth-child(81) .Icon {
+  -webkit-animation-delay: 20.25s;
+}
+
+.Result:nth-child(82) .Icon {
+  -webkit-animation-delay: 20.5s;
+}
+
+.Result:nth-child(83) .Icon {
+  -webkit-animation-delay: 20.75s;
+}
+
+.Result:nth-child(84) .Icon {
+  -webkit-animation-delay: 21s;
+}
+
+.Result:nth-child(85) .Icon {
+  -webkit-animation-delay: 21.25s;
+}
+
+.Result:nth-child(86) .Icon {
+  -webkit-animation-delay: 21.5s;
+}
+
+.Result:nth-child(87) .Icon {
+  -webkit-animation-delay: 21.75s;
+}
+
+.Result:nth-child(88) .Icon {
+  -webkit-animation-delay: 22s;
+}
+
+.Result:nth-child(89) .Icon {
+  -webkit-animation-delay: 22.25s;
+}
+
+.Result:nth-child(90) .Icon {
+  -webkit-animation-delay: 22.5s;
+}
+
+.Result:nth-child(91) .Icon {
+  -webkit-animation-delay: 22.75s;
+}
+
+.Result:nth-child(92) .Icon {
+  -webkit-animation-delay: 23s;
+}
+
+.Result:nth-child(93) .Icon {
+  -webkit-animation-delay: 23.25s;
+}
+
+.Result:nth-child(94) .Icon {
+  -webkit-animation-delay: 23.5s;
+}
+
+.Result:nth-child(95) .Icon {
+  -webkit-animation-delay: 23.75s;
+}
+
+.Result:nth-child(96) .Icon {
+  -webkit-animation-delay: 24s;
+}
+
+.Result:nth-child(97) .Icon {
+  -webkit-animation-delay: 24.25s;
+}
+
+.Result:nth-child(98) .Icon {
+  -webkit-animation-delay: 24.5s;
+}
+
+.Result:nth-child(99) .Icon {
+  -webkit-animation-delay: 24.75s;
+}
+
+.Result:nth-child(100) .Icon {
+  -webkit-animation-delay: 25s;
+}
+
+.Result:nth-child(101) .Icon {
+  -webkit-animation-delay: 25.25s;
+}
+
+.Result:nth-child(102) .Icon {
+  -webkit-animation-delay: 25.5s;
+}
+
+.Result:nth-child(103) .Icon {
+  -webkit-animation-delay: 25.75s;
+}
+
+.Result:nth-child(104) .Icon {
+  -webkit-animation-delay: 26s;
+}
+
+.Result:nth-child(105) .Icon {
+  -webkit-animation-delay: 26.25s;
+}
+
+.Result:nth-child(106) .Icon {
+  -webkit-animation-delay: 26.5s;
+}
+
+.Result:nth-child(107) .Icon {
+  -webkit-animation-delay: 26.75s;
+}
+
+.Result:nth-child(108) .Icon {
+  -webkit-animation-delay: 27s;
+}
+
+.Result:nth-child(109) .Icon {
+  -webkit-animation-delay: 27.25s;
+}
+
+.Result:nth-child(110) .Icon {
+  -webkit-animation-delay: 27.5s;
+}
+
+.Result:nth-child(111) .Icon {
+  -webkit-animation-delay: 27.75s;
+}
+
+.Result:nth-child(112) .Icon {
+  -webkit-animation-delay: 28s;
+}
+
+.Result:nth-child(113) .Icon {
+  -webkit-animation-delay: 28.25s;
+}
+
+.Result:nth-child(114) .Icon {
+  -webkit-animation-delay: 28.5s;
+}
+
+.Result:nth-child(115) .Icon {
+  -webkit-animation-delay: 28.75s;
+}
+
+.Result:nth-child(116) .Icon {
+  -webkit-animation-delay: 29s;
+}
+
+.Result:nth-child(117) .Icon {
+  -webkit-animation-delay: 29.25s;
+}
+
+.Result:nth-child(118) .Icon {
+  -webkit-animation-delay: 29.5s;
+}
+
+.Result[data-type="unknown"] .Icon {
+  background: black;
+}
+
+.Result[data-type="alkali-metal"] .Icon {
+  background: #fe621d;
+}
+
+.Result[data-type="alkaline-earth-metal"] .Icon {
+  background: #ffd402;
+}
+
+.Result[data-type="noble"] .Icon {
+  background: #511a93;
+}
+
+.Result[data-type="poor-metal"] .Icon {
+  background: #1ceab0;
+}
+
+.Result[data-type="transition-metal"] .Icon {
+  background: #b70000;
+}
+
+.Result[data-type="other-non-metal"] .Icon {
+  background: #93fc00;
+}
+
+.Result[data-type="lanthanoid"] .Icon {
+  background: #cc4360;
+}
+
+.Result[data-type="actinoid"] .Icon {
+  background: #5c4d75;
+}
+
+@-webkit-keyframes icon {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  75% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes icon {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  75% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.Icon {
+  overflow: hidden;
+  margin-right: 20px;
+  padding: 28px;
+  height: 90px;
+  width: 90px;
+  position: relative;
+  -webkit-animation-name: icon;
+  animation-name: icon;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.Icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 0%, rgba(255, 255, 255, 0.125) 100%);
+}
+
+.Icon * {
+  position: relative;
+}
+
+.Icon .Number,
+.Icon .Mass {
+  font-size: 12px;
+}
+
+.Icon .Number {
+  margin-bottom: 10px;
+}
+
+.Icon .Symbol {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.Icon .Name {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.Title {
+  font-size: 24px;
+  font-weight: 300;
+}
