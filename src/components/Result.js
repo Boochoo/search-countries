@@ -12,7 +12,7 @@ var Result = createReactClass({
 			<div className="Result searchable" 
 				data-type={this.props.region} data-index={indexString}>
 				<Icon capital={this.props.capital} region={this.props.region} 
-						initial={this.props.initial} areaCode={this.props.areaCode} />		
+						initial={this.props.initial} population={this.props.population} />		
 				<Title title={this.props.name} />
 			</div>
 		);
