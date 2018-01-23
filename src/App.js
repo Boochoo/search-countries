@@ -5,12 +5,12 @@ import './App.css';
 import Header from './components/Header';
 import Results from './components/Results';
 
-import elements from './data';
+import countries from '../src/data/countries';
 
 var App = createReactClass({
 	getDefaultProps: function() {
 		return {
-			elements: elements
+			countries: countries
 		}
 	},
 	handleSearchInput: function(e) {
@@ -28,7 +28,7 @@ var App = createReactClass({
 		return (
 			<div className="App">
 				<Header handleSearchInput={this.handleSearchInput} />
-				<Results elements={this.props.elements} />
+				<Results countries={this.props.countries} />
 			</div>
 		);
 	}

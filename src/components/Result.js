@@ -6,11 +6,13 @@ import Title from './Title';
 
 var Result = createReactClass({
 	render: function() {
-		let indexString = this.props.symbol.toLowerCase() + this.props.number + this.props.name.toLowerCase();
+		let indexString = this.props.capital.toLowerCase() + this.props.region.toLowerCase() + this.props.name.toLowerCase() + this.props.areaCode;
 		
 		return (
-			<div className="Result searchable" data-type={this.props.type} data-index={indexString}>
-				<Icon number={this.props.number} symbol={this.props.symbol} name={this.props.name} mass={this.props.mass} />
+			<div className="Result searchable" 
+				data-type={this.props.region} data-index={indexString}>
+				<Icon capital={this.props.capital} region={this.props.region} 
+						initial={this.props.initial} areaCode={this.props.areaCode} />		
 				<Title title={this.props.name} />
 			</div>
 		);
